@@ -21,7 +21,7 @@ deploy_crabserver_sw()
      -a dmwm-service-cert.pem:wmcore/dmwm-service-cert.pem \
      -a dmwm-service-key.pem:wmcore/dmwm-service-key.pem \
      -a CRABServerAuth.py:crabserver/CRABServerAuth${secrets}.py \
-     comp cms+crabserver
+     comp cms+crabserver-py3
   if grep -rq "replace me" $project_auth; then
     note "WARNING: replace certificates in $project_auth with real ones"
   else :; fi
